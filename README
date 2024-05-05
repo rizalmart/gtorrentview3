@@ -1,0 +1,99 @@
+GTorrentViewer README
+=====================
+
+ GTorrentViewer Copyright (c) 2004 Alejandro Claro.
+
+ This program is released under the GPL with the additional exemption
+ that compiling, linking, and OpenSSL. You may provide binary packages
+ linked to the OpenSSL libraries, provided that all other requirements
+ of the GPL are met. See file COPYING for details.
+
+What is GTorrentViewer?
+=======================
+
+ GTorrentViewer is a GTK2-based viewer and editor for BitTorrent meta files.
+ It is able to retrieve information from trackers, check files, show detailed
+ information, and modify .torrent files without having to start downloading.
+
+Purpose
+=======
+
+ The purpose of GTorrentViewer is to give the ability to see and modify all
+ the possible information from .torrent files without having to start
+ downloading and the ability to see in real time the current number of seeds
+ and peers on the torrent, so you will always know the status before start 
+ the download.
+
+Requirements:
+=============
+
+Version 0.2:
+
+ * GTK+ >= 2.4     (http://www.gtk.org).
+ * libCURL         (http://curl.haxx.se/libcurl/).
+
+Version 0.1:
+
+ * GTK+ >= 2.4     (http://www.gtk.org).
+ * libglade >= 2.0 (ftp://ftp.gnome.org/pub/GNOME/sources/libglade/) 
+ * libCURL         (http://curl.haxx.se/libcurl/).
+ * libSSL          (http://www.openssl.org/).
+
+Compiling and Installation:
+===========================
+
+Type this:
+   
+	CFLAGS=-O3 ./configure
+	make
+
+Become root and type:
+
+	make install
+
+Other Options
+=============
+
+To get a full list of compile options, type:
+
+	./configure --help
+
+If you use a custom libcurl installation:
+
+	./configure --with-curl-config=PATH
+
+If you want to change the system pixmaps directory:
+
+	./configure --with-pixmapsdir=DIR
+
+If you want to change the gnome/kde applications (.desktop files) directory:
+
+	./configure --with-desktopdir=DIR
+
+FAQ:
+====
+
+Q1: I get the following message: configure: error: XML::Parser perl module is 
+required for intltool. What do I do about it?
+
+A: You need to make sure that you have the right variant of the xml-parser-pm
+package to match the Perl version for your system. Try running 
+
+perl -MCPAN -e shell 
+
+as root and in the cpan prompt type
+
+install XML::Parser.
+
+Special thanks and credits:
+===========================
+
+Juan Manuel Palacios (Beta Tester and DarwinPorts maintener).
+Paul Howarth (Beta Tester and Fedora Core 2 RPM package).
+Toni aka oc2pus (SuSE 9.1 RPM package).
+Michael Johnson (FreeBSD port maintener).
+
+You can get more information about GTorrentViewer:
+==================================================
+
+ http://gtorrentviewer.sourceforge.net/

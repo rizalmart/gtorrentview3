@@ -1,0 +1,126 @@
+2024-05-04 rizalmart
+  * ported to GTK+3
+
+2004-10-24  Alejandro Claro <<ap0lly0n@users.sourceforge.net>
+  * added file_state_icons to MainWindow structure, now the file list have they
+    own set of icons.
+  * OK log pixmap changed to information icon (looks better).
+  * Files list set a Unknown file state pixmap before files check.
+  * All pixmaps are new, now they looks all better.
+  * fix warnings that appeared with gcc's -pedantic flag, except the 'ISO C does
+    not permit named variadic macros' warning in main.c.
+
+2004-10-23  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * bug fixed: open button keeps disable after try to open a invalid torrent 
+    file.
+  * added --with-desktopdir and --with-pixmapsdir options to configure
+
+2004-10-19  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * #include <libintl.h> removed, it is no longer necesary and it was the
+    source of some warning in OpenDarwin at compilation time.
+  * #include <openssl/sha1.h> removed, it must be removed long time ego but i
+    forgot about it.
+  * AC_TYPE_OFF_T and AC_SYS_LARGEFILE added to configure.in for large files
+    support.
+  * if fseeko is available, it is used instead of fseek in main.c
+  * type of 'number' argument in util_convert_to_human changed to gdouble.
+  * file size and file remains fields of files list tree view model changed 
+    from UINT to INT64. 
+  * the type of all needed variables in check_files(), mainwindow_fill_files_tab(),
+    mainwindow_create_files_tab() were changed to gint64.
+  * cell_int_to_human() renamed to cell_int64_to_human() and changed to work 
+    with int64 instead of int type.
+  * --with-curl facility added to configure.
+  * some minor changes in configure.in and makefile.am
+    
+2004-10-18  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * version 0.2a released.
+  * bug fixed: Debian gtv binary named identical to smpeg-gtv package.
+    All needed file were changed to correspond with the new executable
+    name (makefiles, menu files, icon files, man page, etc).
+  * bug fixed: File tab lock up when files are bigger than 2.0GB.
+    INT type changed in tree model by UINT type, so now it's able to recognize
+    files up to 4.0GB each.
+  * bug fixed: Total size Entry report bad size for total size bigger
+    than 2.0GB. Now it is able to report up to 1E+37 bytes size.
+  * 'SHA1' general tab's label changed to 'Info hash'.
+
+2004-10-17  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * gtktoolbar widgets removed. This fix the ugly line that appear with some
+    GTK window themes.
+  * get_pixbuf_from_file() renamed to util_get_pixbuf_from_file() and moved
+    from main.c to utilities.c
+
+2004-10-15  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * version 0.2 released.
+
+2004-10-14  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * Drag n Drop Open File support. 
+  * Main Window Title changed to Torrent Metainfo Viewer.
+  * Set insensitive the Open Button while Open file thread is running.
+  * I decided to add to the MainWindow Object the mainwindow_init_class and
+    the mainwindow_finalize functions. So now resources are released in the
+    finalize method instead of the delete event.
+
+2004-10-13  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * GBitArray object, with this i was able to fix a memory leak and make the
+    way pieces is manage is more clean.
+  * CellRendererPieces name change to GtkCellRendererBitarray, and was adapted
+    to use GBitArray instead of a gpointer. 
+
+2004-10-12  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * check_files() complete rewrited. I don't like the old one. This one fix
+    some misbehaviors when was checking files bigger than they should be, and
+    when was checking torrents with many small files.
+
+2004-10-11  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * Custom Cell Renderer (CellRendererPieces) for show complete pieces 
+    in the files list. 
+  * fix possible memory leak when g_thread_create fails in
+    on_RefreshSeedsButton_clicked(), on_CheckFilesButton_clicked() and
+    on_OpenToolButton_clicked().
+  * fixed memory leak when file check thread is call a second time and have to
+    exit with a warning. It have to unalloc the file/directory name, but it was
+    unallocating anything at all.
+
+2004-10-09  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * Files ListStore now store INT instead of STRING for file size, first piece,
+    number of pieces and remains fields.
+  * cell_int_to_human function, it's used to render file size and remains 
+    cells in human readable format.
+  * all thread functions calls replaced by they correpondent macros versions.
+  * GeneralTab_fill and similar functions slightly modified and renamed to
+    mainwindow_TABNAME_tab_fill. 
+  * append_row_DetailsTree() renamed to mainwindow_append_row_bencode_tree().
+  * remember the last visited directory when open file button is clicked.
+  * Refresh Buttons are not stock buttons anymore, so when print wait label 
+    the button's icons don't desappear.
+
+2004-10-08  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * log_print function replaced by mainwindow_log_printf that
+    work like printf family functions.
+  * log_ok, log_warning and log_error macros changed to use
+    mainwindow_log_printf function.
+  * libSSL is not needed anymore. SHA-1 implementation adapted
+    from Christophe Devine's original code. 
+  * Internationalization support.
+
+2004-10-07  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * GtvApp structure replaced by MainWindow GtkObject.
+  * libGlade is not needed anymore.
+  * about.png is now a embedded pixmap in the executable.
+  * minor changes in Makefiles.
+
+2004-10-06  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * parse command line options.
+  * display usage.
+  * check GTK+ version in main().
+  * new gtv man page.
+
+2004-10-02  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * .desktop file for gnome menu.
+  * new README file.
+  * debianization files.
+  
+2004-09-29  Alejandro Claro <ap0lly0n@users.sourceforge.net>
+  * version 0.1, first release.
