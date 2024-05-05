@@ -1,7 +1,8 @@
 GTorrentViewer README
 =====================
 
- GTorrentViewer Copyright (c) 2004 Alejandro Claro.
+ GTorrentViewer Copyright (c) 2024 Alejandro Claro.
+(ported to GTK+3 by rizalmart)
 
  This program is released under the GPL with the additional exemption
  that compiling, linking, and OpenSSL. You may provide binary packages
@@ -11,7 +12,7 @@ GTorrentViewer README
 What is GTorrentViewer?
 =======================
 
- GTorrentViewer is a GTK2-based viewer and editor for BitTorrent meta files.
+ GTorrentViewer is a GTK3-based viewer and editor for BitTorrent meta files.
  It is able to retrieve information from trackers, check files, show detailed
  information, and modify .torrent files without having to start downloading.
 
