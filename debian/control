@@ -1,0 +1,14 @@
+Source: gtorrentviewer
+Section: x11
+Priority: optional
+Maintainer: Alejandro Claro <ap0lly0n@users.sourceforge.net>
+Build-Depends: debhelper (>= 4.0.0), autoconf (>= 2.5), automake1.4, gcc-3.3,  libcurl2-dev, libglib2.0-dev (>= 2.4), libgtk2.0-dev (>= 2.4)
+Standards-Version: 3.6.1
+
+Package: gtorrentviewer
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: BitTorrent MetaInfo viewer/editor
+ GTorrentViewer is a GTK2-based viewer and editor for BitTorrent meta files.
+ It is able to retrieve information from trackers, check files, show detailed
+ information, and modify torrent files without having to start downloading.

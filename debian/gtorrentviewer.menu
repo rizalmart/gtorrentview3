@@ -1,0 +1,6 @@
+?package(gtorrentviewer):needs="X11"                          \
+                         section="Apps/Net"                   \
+                         title="Torrent MetaInfo Viewer"      \
+                         command="/usr/bin/gtorrentviewer"    \
+                         longtitle="Torrent Metafiles Viewer and Editor" \
+                         icon="/usr/share/pixmaps/gtorrentviewer.xpm"

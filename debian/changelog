@@ -1,0 +1,43 @@
+gtorrentviewer (0.2b-1) unstable; urgency=low
+
+  * new GTorrentViewer version.
+
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Mon, 25 Oct 2004 21:31:27 -0400
+
+gtorrentviewer (0.2a-1) unstable; urgency=low
+
+  * new GTorrentViewer version.
+  * removed --program-suffix=iewer in configure section in rules. The 
+    executable name was changed to 'gtorrentviewer' in the source tarball.
+
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Sun, 18 Oct 2004 16:40:32 -0400
+
+gtorrentviewer (0.2-2) unstable; urgency=low
+
+  * fixed Identically named binary in debian package smpeg-gtvb.
+    added --program-suffix=iewer to configure in rules, so now
+    the exec's name is gtviewer.
+
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Sun, 17 Oct 2004 15:42:04 -0400
+
+gtorrentviewer (0.2-1) unstable; urgency=low
+
+  * new GTorrentViewer version.
+  * control description changed.
+  * menu intem Title changed.
+  
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Fri, 15 Oct 2004 14:25:39 -0400
+
+gtorrentviewer (0.1-2) unstable; urgency=low
+
+  * Remove the debian man page. The dist have know one.
+  * add icon and longtitle fields to gtorrentviewer.menu.
+  * Some debianization minor bugs fixed.
+
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Mon, 4 Oct 2004 11:32:19 -0400
+
+gtorrentviewer (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Alejandro Claro <ap0lly0n@users.sourceforge.net>  Wed, 29 Sep 2004 17:53:40 -0400
