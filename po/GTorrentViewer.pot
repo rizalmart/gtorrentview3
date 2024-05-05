@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-10-26 00:42-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/main.c:102
+#, c-format
+msgid ""
+"Sorry, your GTK+ version (%d.%d.%d) does not work with GTorrentViewer.\n"
+"Please use GTK+ %s or higher.\n"
+msgstr ""
+
+#: src/main.c:127
+#, c-format
+msgid "Command line file option: %s."
+msgstr ""
+
+#: src/main.c:155
+msgid "Usage: gtv [options] [torrentfile]\n"
+msgstr ""
+
+#: src/main.c:157
+msgid "Display this text and exit."
+msgstr ""
+
+#: src/main.c:159
+msgid "Print version number and exit.\n"
+msgstr ""
+
+#: src/main.c:215
+#, c-format
+msgid "Opening %s."
+msgstr ""
+
+#: src/main.c:235
+#, c-format
+msgid "Open error: %s is not a bencoded torrent file or have corrupted data."
+msgstr ""
+
+#: src/main.c:283
+msgid "Open success."
+msgstr ""
+
+#: src/main.c:316
+msgid "Previous connection not finish yet. Try again later."
+msgstr ""
+
+#: src/main.c:358
+#, c-format
+msgid "Connecting to %s"
+msgstr ""
+
+#: src/main.c:404
+msgid "Scrape success."
+msgstr ""
+
+#: src/main.c:410
+msgid "Bad data from tracker"
+msgstr ""
+
+#: src/main.c:430
+msgid "Error in Curl library."
+msgstr ""
+
+#: src/main.c:437
+msgid "Couldn't create the temporary file for the tracker scrape."
+msgstr ""
+
+#: src/main.c:446
+msgid "This tracker don't support scrape."
+msgstr ""
+
+#: src/main.c:455
+msgid "Couldn't scrape. Bad Torrent data, Info section lost."
+msgstr ""
+
+#: src/main.c:474
+#, c-format
+msgid "Wait(%i)"
+msgstr ""
+
+#: src/main.c:537
+msgid "Already checking files. Try again later."
+msgstr ""
+
+#: src/main.c:573
+msgid "Files check started."
+msgstr ""
+
+#: src/main.c:610
+msgid "Unexpected files list reading error."
+msgstr ""
+
+#: src/main.c:674
+#, c-format
+msgid "%s is smaller than it should be"
+msgstr ""
+
+#: src/main.c:734
+msgid "Files check canceled."
+msgstr ""
+
+#: src/main.c:736
+msgid "Files check complete."
+msgstr ""
+
+#: src/main.c:743
+msgid "The files list seems to be empty"
+msgstr ""
+
+#: src/mainwindow.c:609 src/mainwindow.c:707
+msgid "Open File"
+msgstr ""
+
+#: src/mainwindow.c:698
+msgid "Open Folder"
+msgstr ""
+
+#: src/mainwindow.c:1090
+msgid "New"
+msgstr ""
+
+#: src/mainwindow.c:1095
+msgid "Open"
+msgstr ""
+
+#: src/mainwindow.c:1101
+msgid "Save As"
+msgstr ""
+
+#: src/mainwindow.c:1110
+msgid "Quit"
+msgstr ""
+
+#: src/mainwindow.c:1139
+msgid "Info hash:"
+msgstr ""
+
+#: src/mainwindow.c:1167 src/mainwindow.c:1599
+msgid "Tracker:"
+msgstr ""
+
+#: src/mainwindow.c:1185
+msgid "Date:"
+msgstr ""
+
+#: src/mainwindow.c:1195
+msgid "Created By:"
+msgstr ""
+
+#: src/mainwindow.c:1202
+msgid "Comments:"
+msgstr ""
+
+#: src/mainwindow.c:1225
+msgid "Name:"
+msgstr ""
+
+#: src/mainwindow.c:1245
+msgid "Peers:"
+msgstr ""
+
+#: src/mainwindow.c:1252
+msgid "Downloaded:"
+msgstr ""
+
+#: src/mainwindow.c:1280
+msgid "Seeds:"
+msgstr ""
+
+#: src/mainwindow.c:1304 src/mainwindow.c:1632
+msgid "_Refresh"
+msgstr ""
+
+#: src/mainwindow.c:1309
+msgid "General"
+msgstr ""
+
+#. column #1
+#: src/mainwindow.c:1360
+msgid "Name"
+msgstr ""
+
+#. column #2
+#: src/mainwindow.c:1374
+msgid "Size"
+msgstr ""
+
+#. column #3
+#: src/mainwindow.c:1384
+msgid "First Piece"
+msgstr ""
+
+#. column #4
+#: src/mainwindow.c:1393
+msgid "# Pieces"
+msgstr ""
+
+#. column #5
+#: src/mainwindow.c:1402
+msgid "Remains"
+msgstr ""
+
+#. column #6
+#: src/mainwindow.c:1412
+msgid "Complete Pieces"
+msgstr ""
+
+#. end initialize tree
+#: src/mainwindow.c:1429
+msgid "Files list:"
+msgstr ""
+
+#: src/mainwindow.c:1442
+msgid "Total size:"
+msgstr ""
+
+#: src/mainwindow.c:1449
+msgid "Files:"
+msgstr ""
+
+#: src/mainwindow.c:1470
+msgid "Pieces:"
+msgstr ""
+
+#: src/mainwindow.c:1477
+msgid "Piece length:"
+msgstr ""
+
+#: src/mainwindow.c:1515
+msgid "_Check"
+msgstr ""
+
+#: src/mainwindow.c:1519
+msgid "Files"
+msgstr ""
+
+#. end initialize Torrent Detailed tree
+#: src/mainwindow.c:1567
+msgid "Torrent Details"
+msgstr ""
+
+#. end initialize Tracker Detailed Tree
+#: src/mainwindow.c:1664
+msgid "Trackers Details"
+msgstr ""
+
+#. end initialize the Log list
+#: src/mainwindow.c:1718
+msgid "Log"
+msgstr ""
+
+#: src/mainwindow.c:1751
+msgid "<b><big>GTorrentViewer v"
+msgstr ""
+
+#: src/mainwindow.c:1751
+msgid "</big></b>"
+msgstr ""
+
+#: src/mainwindow.c:1756
+msgid ""
+"GTorrentViewer is a Viewer/Editor for .torrent files.\n"
+"\n"
+"It is written using Gtk+ and is licensed under the GPL."
+msgstr ""
+
+#: src/mainwindow.c:1766
+msgid "<small>Copyright (C) 2004 Claro Alejandro</small>"
+msgstr ""
+
+#: src/mainwindow.c:1772
+msgid "About"
+msgstr ""

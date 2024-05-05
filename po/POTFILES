@@ -1,0 +1,4 @@
+	../src/main.c \
+	../src/mainwindow.c \
+	../src/gbitarray.c \
+	../src/gtkcellrendererbitarray.c
