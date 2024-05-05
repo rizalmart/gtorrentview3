@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Torrent Metainfo Viewer
+_GenericName=Torrent Viewer
+_Comment=Viewer and Editor for .torrent files
+Exec=gtorrentviewer %f
+Icon=gtorrentviewer
+StartupNotify=false
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;Network;
+MimeType=application/x-bittorrent;
+Version=1.0
